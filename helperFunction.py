@@ -17,6 +17,7 @@ def removeUnicode(text):
     return text.encode('ascii', 'ignore').decode().replace('\"', '')
 
 
+
 def fetchLinks(url, element, className):
     bsObj = fetchHtmlAndParse(url)
     links = []
